@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe Game</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            padding: 30px;
+            box-sizing: border-box;
+            background-color: #9fffff;
+        }
+        h1{
+            color: red;
+        }
+        table{
+            border-collapse: collapse;
+            width: 300px;
+            height: 300px;
+        }
+        td{
+            border: 2px solid black;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+            font-size: 50px;
+            cursor: pointer;
+        }
+        td:hover{
+            background-color: #f0f0f0;
+        }
+        #output{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tic Tac Toe Game</h1>
+    <table>
+        <tr>
+            <td id="0"></td>
+            <td id="1"></td>
+            <td id="2"></td>
+        </tr>
+        <tr>
+            <td id="3"></td>
+            <td id="4"></td>
+            <td id="5"></td>
+        </tr>
+        <tr>
+            <td id="6"></td>
+            <td id="7"></td>
+            <td id="8"></td>
+        </tr>
+    </table>
+    <div>
+        <h2 id="output">Player X : Mark a box to start the game</h2>
+        <label for="computerPlay">Play with Computer</label>
+        <input type="checkbox" name="computerPlay" id="computerPlay">
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
